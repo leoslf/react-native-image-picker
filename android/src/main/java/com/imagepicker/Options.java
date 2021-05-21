@@ -11,6 +11,7 @@ public class Options {
     int maxWidth;
     int maxHeight;
     Boolean saveToPhotos;
+    Boolean quickCapture;
     int durationLimit;
     Boolean useFrontCamera = false;
 
@@ -34,6 +35,7 @@ public class Options {
         maxHeight = options.getInt("maxHeight");
         maxWidth = options.getInt("maxWidth");
         saveToPhotos = options.getBoolean("saveToPhotos");
+        quickCapture = options.getBoolean("quickCapture");
         durationLimit = options.getInt("durationLimit");
     }
 }

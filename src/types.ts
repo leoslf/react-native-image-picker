@@ -10,6 +10,7 @@ export interface ImageLibraryOptions {
 }
 
 export interface CameraOptions extends ImageLibraryOptions {
+  quickCapture?: boolean;
   durationLimit?: number;
   saveToPhotos?: boolean;
   cameraType?: CameraType;

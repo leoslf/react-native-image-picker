@@ -93,6 +93,8 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
             file = createFile(reactContext, "jpg");
             cameraCaptureURI = createUri(file, reactContext);
         }
+        // option for quick capture
+        cameraIntent.putExtra("android.intent.extra.quickCapture", this.options.quickCapture);
 
         if (this.options.useFrontCamera) {
             setFrontCamera(cameraIntent);
